@@ -1,0 +1,144 @@
+EJEMPLOS DE PREDICCIÓN — MODELOS DE INTELIGENCIA ARTIFICIAL
+============================================================
+
+Fichas con filas REALES extraídas de cada dataset para probar la
+predicción de los modelos en la aplicación Streamlit. Cada fila incluye
+su valor real (target) para comparar con la predicción del modelo.
+
+Cómo usarlas: en cada caso, sección "Predicción", ingresar los valores
+indicados y comparar el resultado del modelo con el valor real.
+
+----------------------------------------------------------------------------
+CASO 1 — CALIFORNIA HOUSING  (modelo recomendado: Polinomial grado 2)
+----------------------------------------------------------------------------
+El modelo predice el VALOR MEDIO DE LA VIVIENDA (USD).
+Valor real: median_house_value.
+
+Ejemplo 1 (cerca del océano, ingreso bajo):
+  longitude            = -118.31
+  latitude             = 34.06
+  housing_median_age   = 31
+  total_rooms          = 2827
+  total_bedrooms       = 1084
+  population           = 3107
+  households           = 993
+  median_income        = 2.0278
+  ocean_proximity      = <1H OCEAN
+  VALOR REAL: 360,000 USD
+
+Ejemplo 2 (cerca del océano, ingreso medio):
+  longitude            = -118.31
+  latitude             = 33.81
+  housing_median_age   = 30
+  total_rooms          = 1773
+  total_bedrooms       = 356
+  population           = 905
+  households           = 352
+  median_income        = 4.3056
+  ocean_proximity      = <1H OCEAN
+  VALOR REAL: 336,000 USD
+
+Ejemplo 3 (NEAR BAY, distrito maduro):
+  longitude            = -122.24
+  latitude             = 37.81
+  housing_median_age   = 52
+  total_rooms          = 2513
+  total_bedrooms       = 502
+  population           = 1048
+  households           = 518
+  median_income        = 3.675
+  ocean_proximity      = NEAR BAY
+  VALOR REAL: 269,900 USD
+
+----------------------------------------------------------------------------
+CASO 2 — WINE QUALITY  (modelo recomendado: Regresión Lineal)
+----------------------------------------------------------------------------
+El modelo predice la CALIDAD DEL VINO (escala 0-10, valor continuo).
+Valor real: quality (entero).
+
+Ejemplo 1 (vino de baja calidad):
+  fixed acidity          = 8.3
+  volatile acidity       = 0.625
+  citric acid            = 0.2
+  residual sugar         = 1.5
+  chlorides              = 0.08
+  free sulfur dioxide    = 27.0
+  total sulfur dioxide   = 119.0
+  density                = 0.9972
+  pH                     = 3.16
+  sulphates              = 1.12
+  alcohol                = 9.1
+  VALOR REAL: 4
+
+Ejemplo 2 (vino de buena calidad):
+  fixed acidity          = 8.9
+  volatile acidity       = 0.28
+  citric acid            = 0.45
+  residual sugar         = 1.7
+  chlorides              = 0.067
+  free sulfur dioxide    = 7.0
+  total sulfur dioxide   = 12.0
+  density                = 0.99354
+  pH                     = 3.25
+  sulphates              = 0.55
+  alcohol                = 12.3
+  VALOR REAL: 7
+
+Ejemplo 3 (vino de calidad media):
+  fixed acidity          = 11.5
+  volatile acidity       = 0.35
+  citric acid            = 0.49
+  residual sugar         = 3.3
+  chlorides              = 0.07
+  free sulfur dioxide    = 10.0
+  total sulfur dioxide   = 37.0
+  density                = 1.0003
+  pH                     = 3.32
+  sulphates              = 0.91
+  alcohol                = 11.0
+  VALOR REAL: 6
+
+----------------------------------------------------------------------------
+CASO 3 — DIABETES  (modelo recomendado: Regresión Lineal)
+----------------------------------------------------------------------------
+El modelo predice la PROGRESIÓN DE LA DIABETES (Y, valor continuo).
+Valor real: Y.
+
+Ejemplo 1 (paciente joven, mujer, IMC bajo):
+  AGE = 25
+  SEX = 2 (mujer)
+  BMI = 22.6
+  BP  = 85.0
+  S1  = 130.0
+  S2  = 71.0
+  S3  = 48.0
+  S4  = 3.0
+  S5  = 4.0073
+  S6  = 81.0
+  VALOR REAL: 71
+
+Ejemplo 2 (paciente mayor, mujer):
+  AGE = 59
+  SEX = 2 (mujer)
+  BMI = 25.5
+  BP  = 95.33
+  S1  = 190.0
+  S2  = 139.4
+  S3  = 35.0
+  S4  = 5.43
+  S5  = 4.3567
+  S6  = 117.0
+  VALOR REAL: 81
+
+Ejemplo 3 (paciente joven, hombre):
+  AGE = 29
+  SEX = 1 (hombre)
+  BMI = 26.0
+  BP  = 83.0
+  S1  = 141.0
+  S2  = 65.2
+  S3  = 64.0
+  S4  = 2.0
+  S5  = 4.0775
+  S6  = 83.0
+  VALOR REAL: 61
