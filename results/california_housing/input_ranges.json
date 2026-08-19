@@ -1,0 +1,66 @@
+{
+  "numeric": {
+    "longitude": {
+      "min": -124.35,
+      "max": -114.31,
+      "mean": -119.57,
+      "median": -118.49
+    },
+    "latitude": {
+      "min": 32.54,
+      "max": 41.95,
+      "mean": 35.632,
+      "median": 34.26
+    },
+    "housing_median_age": {
+      "min": 1.0,
+      "max": 52.0,
+      "mean": 28.639,
+      "median": 29.0
+    },
+    "total_rooms": {
+      "min": 2.0,
+      "max": 39320.0,
+      "mean": 2635.763,
+      "median": 2127.0
+    },
+    "total_bedrooms": {
+      "min": 1.0,
+      "max": 6445.0,
+      "mean": 537.871,
+      "median": 435.0
+    },
+    "population": {
+      "min": 3.0,
+      "max": 35682.0,
+      "mean": 1425.477,
+      "median": 1166.0
+    },
+    "households": {
+      "min": 1.0,
+      "max": 6082.0,
+      "mean": 499.54,
+      "median": 409.0
+    },
+    "median_income": {
+      "min": 0.5,
+      "max": 15.0,
+      "mean": 3.871,
+      "median": 3.535
+    }
+  },
+  "categorical": {
+    "ocean_proximity": [
+      "NEAR BAY",
+      "<1H OCEAN",
+      "INLAND",
+      "NEAR OCEAN",
+      "ISLAND"
+    ]
+  },
+  "target": {
+    "name": "median_house_value",
+    "min": 14999.0,
+    "max": 500001.0
+  }
+}

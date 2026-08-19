@@ -1,0 +1,17 @@
+{
+  "model_id": "california_housing",
+  "features": [
+    "longitude",
+    "latitude",
+    "housing_median_age",
+    "total_rooms",
+    "total_bedrooms",
+    "population",
+    "households",
+    "median_income",
+    "ocean_proximity_INLAND",
+    "ocean_proximity_ISLAND",
+    "ocean_proximity_NEAR BAY",
+    "ocean_proximity_NEAR OCEAN"
+  ]
+}
